@@ -41,11 +41,16 @@ id_fabricante = 2
 **Flujo lógico:**
 
 flowchart LR
-A[Cliente] -->|PUT + token| B[API /producto.php]
+A[Cliente] -->|PUT + token| B[API /producto.php] 
+
 B --> C{Token válido?}
+
 C -- Sí --> D[Actualizar producto en BD]
+
 C -- No --> E[Retornar error JSON]
+
 D --> F[Retornar éxito JSON]
+
 
 Ejemplo respuesta éxito
 
