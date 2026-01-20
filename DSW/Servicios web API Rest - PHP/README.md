@@ -40,7 +40,6 @@ id_fabricante = 2
 
 **Flujo lógico:**
 
-```mermaid
 flowchart LR
 A[Cliente] -->|PUT + token| B[API /producto.php]
 B --> C{Token válido?}
